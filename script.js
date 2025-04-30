@@ -155,16 +155,16 @@ rightBtn.addEventListener("click", () => {
 
 startBtn.addEventListener("click", () => {
   console.log(player1Input.value);
-  const gameOf = parseInt(gameInput.value);
-  if (isNaN(gameOf)) {
+  const bestOf = parseInt(gameInput.value);
+  if (isNaN(bestOf)) {
     alert("Masukkan angka terlebih dahulu!");
     return;
   }
-  if (gameOf % 2 === 0) {
+  if (bestOf % 2 === 0) {
     alert("Jumlah game harus ganjil (contoh: 1, 3, 5, dst)");
     return;
   }
-  maxPoint = Math.ceil(gameOf / 2);
+  maxPoint = Math.ceil(bestOf / 2);
   enableButtons();
   player1.textContent = player1Input.value + " (Player 1)";
   player2.textContent = player2Input.value + " (Player 2)";
