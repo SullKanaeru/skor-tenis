@@ -1,0 +1,160 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+thead {
+  height: 70px;
+}
+
+.row {
+  height: 50px;
+}
+
+.papan {
+  width: 700px;
+  height: 600px;
+  background-color: rgb(182, 22, 22);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+input {
+  height: 20px;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+}
+
+.skor-container {
+  width: 70%;
+  height: 60%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.another-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.skor-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skor-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skor-box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.poin-box {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+.box {
+  border: solid black 5px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin-top: 5px;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.right-button {
+  align-self: end;
+}
+
+p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.p2 {
+  align-self: end;
+} 
+
+.win-status {
+  position: absolute;
+  top: 40px;
+  font-weight: bold;
+  color: green;
+}
+
+.totalGameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalGameContainer input {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

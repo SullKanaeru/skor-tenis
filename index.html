@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tenis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="scoreTable">
+      <table style="width: 500px">
+        <thead>
+          <tr>
+            <th>Player 1</th>
+            <th>Player2</th>
+            <th>Score</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody class="row">
+        </tbody>
+      </table>
+    </div>
+    <div class="papan">
+      <div class="inputs">
+        <div class="input-row">
+          <input class="player1Input" type="text" placeholder="Player 1 Name" />
+          <input class="player2Input" type="text" placeholder="Player 2 Name" />
+          <input class="gameInput" type="number" placeholder="Game of" min="1" />
+        </div>
+        <button class="startGame">Start</button>
+      </div>
+
+      <div class="skor-container">
+        <p class="win-status"></p>
+
+        <div class="left-side">
+          <div class="another-box">
+
+            <div class="skor-column">
+              <p class="p1">Player 1</p>
+              <div class="skor-row">
+                <div class="left-skor skor-box box">
+                  <h1 class="left-skor-value">0</h1>
+                </div>
+
+                <div class="left-poin poin-box box">
+                  <h1 class="left-poin-value">0</h1>
+                </div>
+              </div>
+              <button class="left-button button" disabled>Poin!</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="another-box">
+
+            <div class="skor-column">
+              <p class="p2">Player 2</p>
+              <div class="skor-row">
+                <div class="right-poin poin-box box">
+                  <h1 class="right-poin-value">0</h1>
+                </div>
+                <div class="right-skor skor-box box">
+                  <h1 class="right-skor-value">0</h1>
+                </div>
+
+              </div>
+              <button class="right-button button" disabled>Poin!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
